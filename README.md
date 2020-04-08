@@ -2,7 +2,22 @@
 
 mbed host application for PS2 controller
 
-### Quick start with LPC1768
+## Requirement
+
+- LPC1768
+- Mbed CLI platform for windows (see [wiki](https://github.com/bigw00d/research-mcu-development-platform/wiki/Mbed-CLI))
+- USB Connector (Mini B)
+
+##  Pin connections
+
+|USB Connector  |LPC1768  |Note  |
+|---|---|---|
+|+5V  |VIN  ||
+|GND  |GND  ||
+|D+  | D+ ||
+|D-  | D- ||
+
+### Quick start 
 
 1. build & upload project
 ```txt
@@ -10,9 +25,11 @@ C:\WorkSpace\mbed-repo\mbedos2-cli-example-basic>mbed compile -m LPC1768 -t GCC_
 C:\WorkSpace\mbed-repo\mbedos2-cli-example-basic>copy BUILD\LPC1768\GCC_ARM\mbedos2-cli-ps2controller-host D:\
 ```
 
+
 ### Related Links
 
 * [PS_PAD(mbed library for PS controller)](https://os.mbed.com/users/okini3939/code/PS_PAD/).
+* [USBMouseKeyboard](https://os.mbed.com/users/samux/code/USBMouseKeyboard_HelloWorld/)
 
 ### License and contributions
 
