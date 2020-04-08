@@ -31,6 +31,13 @@ C:\WorkSpace\mbed-repo\mbedos2-cli-example-basic>copy BUILD\LPC1768\GCC_ARM\mbed
 ```
 (clean build)
 
+### Note 
+
+```txt
+C:\WorkSpace\mbed-repo\mbedos2-cli-example-basic>mbed deploy
+```
+is command Extracting USBDevice from web.
+
 ### Related Links
 
 * [PS_PAD(mbed library for PS controller)](https://os.mbed.com/users/okini3939/code/PS_PAD/).
