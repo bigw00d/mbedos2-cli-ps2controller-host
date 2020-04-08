@@ -1,6 +1,6 @@
 # mbedos2-cli-example-basic
 
-# Quick start with LPC1768
+## Quick start with LPC1768
 
 1. build & upload project
 ```txt
