@@ -21,15 +21,18 @@ mbed host application for PS2 controller
 
 1. build & upload project
 ```txt
-C:\WorkSpace\mbed-repo\mbedos2-cli-example-basic>mbed compile -m LPC1768 -t GCC_ARM
-C:\WorkSpace\mbed-repo\mbedos2-cli-example-basic>copy BUILD\LPC1768\GCC_ARM\mbedos2-cli-ps2controller-host D:\
+C:\WorkSpace\mbedos2-cli-ps2controller-host>mbed config root .
+C:\WorkSpace\mbedos2-cli-ps2controller-host>mbed compile -m LPC1768 -t GCC_ARM
+C:\WorkSpace\mbedos2-cli-ps2controller-host>copy BUILD\LPC1768\GCC_ARM\mbedos2-cli-ps2controller-host.bin D:\
 ```
 or
 ```txt
-C:\WorkSpace\mbed-repo\mbedos2-cli-example-basic>mbed compile -c -m LPC1768 -t GCC_ARM
-C:\WorkSpace\mbed-repo\mbedos2-cli-example-basic>copy BUILD\LPC1768\GCC_ARM\mbedos2-cli-ps2controller-host D:\
+C:\WorkSpace\mbedos2-cli-ps2controller-host>mbed config root .
+C:\WorkSpace\mbed-repo\mbedos2-cli-ps2controller-host>mbed compile -c -m LPC1768 -t GCC_ARM
+C:\WorkSpace\mbed-repo\mbedos2-cli-ps2controller-host>copy BUILD\LPC1768\GCC_ARM\mbedos2-cli-ps2controller-host.bin D:\
 ```
-(clean build)
+* '-c' is clean build option
+* You only need to do  'mbed config root .' the first time you use.
 
 ### Note 
 
