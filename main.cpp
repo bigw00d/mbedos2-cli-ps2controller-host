@@ -1,6 +1,6 @@
 #include "mbed.h"
 // #include "USBMouseKeyboard.h"
-// #include "PS_PAD.h"
+#include "PS_PAD.h"
 
 Serial pc(USBTX, USBRX); // tx, rx
 
@@ -23,13 +23,15 @@ Serial pc(USBTX, USBRX); // tx, rx
  * 9:+3V 10:GND
  *
  */
-// PS_PAD vsc3(p5, p6, p7, p21); 
+PS_PAD vsc3(p5, p6, p7, p21); 
 
 // DigitalOut myled[] = {LED1, LED2, LED3, LED4};
 
 int main() {
     pc.baud(115200);
     pc.printf("START\n");
+    vsc3.init();
+
     while(1) {
         wait(3.0);
         pc.printf("LOOP\n");
