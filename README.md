@@ -10,12 +10,14 @@ mbed host application for PS2 controller
 
 ##  Pin connections
 
-|USB Connector  |LPC1768  |Note  |
+|Controller  |LPC1768  |Note  |
 |---|---|---|
-|+5V  |VIN  ||
-|GND  |GND  ||
-|D+  | D+ ||
-|D-  | D- ||
+|Data | p6 |insert 1k pull-up to 5V|
+|CMD  | p5 ||
+|GND  | GND ||
+|3V3  | 3V3 ||
+|SEL  | P21 ||
+|CLK  | p7 ||
 
 ### Quick start 
 
